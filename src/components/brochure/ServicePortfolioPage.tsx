@@ -71,27 +71,27 @@ export const ServicePortfolioPage = () => {
       
       {/* Content */}
       <div className="p-16 h-full">
-        <h1 className="font-cinzel text-headline font-bold text-navy mb-10">
+        <h1 className="font-cinzel text-title font-bold text-navy mb-8">
           Our Legal Services
         </h1>
         
-        <div className="grid grid-cols-2 gap-x-12 gap-y-6 max-h-[calc(100%-12rem)] overflow-hidden">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-5 max-h-[calc(100%-10rem)]">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 border border-gold-accent/10 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gold-accent rounded-lg flex items-center justify-center">
-                  <service.icon className="w-5 h-5 text-navy" strokeWidth={2} />
+            <div key={index} className="bg-white rounded-lg p-5 border border-gold-accent/10 shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 bg-gold-accent rounded-lg flex items-center justify-center">
+                  <service.icon className="w-4 h-4 text-navy" strokeWidth={2} />
                 </div>
-                <h3 className="font-montserrat text-body-lg font-semibold text-navy">
+                <h3 className="font-montserrat text-body font-semibold text-navy">
                   {service.category}
                 </h3>
               </div>
               
-              <ul className="space-y-1.5">
+              <ul className="space-y-1">
                 {service.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-2 font-montserrat text-body text-black/90 leading-tight">
-                    <div className="w-1 h-1 bg-gold-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-sm">{item}</span>
+                  <li key={itemIndex} className="flex items-start gap-2 font-montserrat text-caption text-black/90 leading-tight">
+                    <div className="w-1 h-1 bg-gold-accent rounded-full mt-1.5 flex-shrink-0"></div>
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>

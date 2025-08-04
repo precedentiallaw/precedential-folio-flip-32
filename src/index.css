@@ -69,11 +69,12 @@
     --font-headline: 'Cinzel', serif;
     --font-body: 'Montserrat', sans-serif;
     
-    /* Professional Typography Sizes - Reduced for Legal Print Standards */
-    --text-hero: 3.5rem;      /* 56px */
-    --text-display: 2.75rem;  /* 44px */
-    --text-headline: 2rem;    /* 32px */
-    --text-subhead: 1.25rem;  /* 20px */
+    /* Professional Typography Sizes - Legal Print Standards */
+    --text-hero: 2.625rem;    /* 42px */
+    --text-display: 2.25rem;  /* 36px */
+    --text-headline: 1.75rem; /* 28px */
+    --text-subhead: 1.375rem; /* 22px */
+    --text-title: 1.125rem;   /* 18px */
     --text-body-lg: 1rem;     /* 16px */
     --text-body: 0.875rem;    /* 14px */
     --text-caption: 0.75rem;  /* 12px */
