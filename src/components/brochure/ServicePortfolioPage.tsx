@@ -21,7 +21,7 @@ export const ServicePortfolioPage = () => {
         "Pre-litigation Strategy & Dispute Management",
         "Arbitration & Mediation Support",
         "Cheque Bounce & Execution Cases",
-        "UAE Judgment Enforcement (Local & Cross-border)"
+        "UAE Judgment Enforcement"
       ]
     },
     {
@@ -35,8 +35,17 @@ export const ServicePortfolioPage = () => {
       ]
     },
     {
-      category: "Family & Estate Management",
+      category: "Property & Rental Law",
       icon: Home,
+      items: [
+        "Tenancy Dispute Resolution",
+        "Property Transfer & Mortgage Legalities",
+        "Custom Landlord–Tenant Contracts"
+      ]
+    },
+    {
+      category: "Family & Estate Management",
+      icon: FileText,
       items: [
         "UAE Family & Divorce Law",
         "Wills & Guardianship Advisory",
@@ -44,25 +53,13 @@ export const ServicePortfolioPage = () => {
       ]
     },
     {
-      category: "Property & Rental Law",
-      icon: FileText,
-      items: [
-        "Tenancy Dispute Resolution",
-        "Property Transfer & Mortgage Legalities",
-        "Custom Landlord–Tenant Contract Structuring"
-      ]
-    },
-    {
-      category: "Specialized Legal Areas",
+      category: "Specialized Legal Services",
       icon: Search,
       items: [
         "Travel Ban Resolution",
-        "Personal Injury & Compensation Claims",
-        "Trademark Registration & IP Searches",
+        "Trademark Registration & IP",
         "Bankruptcy & Insolvency",
-        "Anti-Money Laundering (AML) Compliance",
-        "Vendor & Investor Due Diligence",
-        "KYC/AML & Regulatory Compliance Checks"
+        "AML Compliance & Due Diligence"
       ]
     }
   ];
@@ -70,54 +67,48 @@ export const ServicePortfolioPage = () => {
   return (
     <div className="brochure-page h-full relative">
       {/* Header Line */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-gold-accent via-gold-light to-gold-accent"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
-      {/* Wing Supergraphic */}
-      <div className="absolute top-12 left-12">
-        <svg width="60" height="45" viewBox="0 0 100 75" className="fill-gold-accent opacity-70 drop-shadow-lg">
-          <path d="M50 15 L25 30 L35 40 L50 35 L65 40 L75 30 Z" />
-        </svg>
-      </div>
-
       {/* Content */}
-      <div className="p-16 pt-28 h-full">
-        <h1 className="font-cinzel text-headline font-bold text-navy mb-12">
-          Comprehensive Service Portfolio
+      <div className="p-16 h-full">
+        <h1 className="font-cinzel text-headline font-bold text-navy mb-10">
+          Our Legal Services
         </h1>
         
-        <div className="grid grid-cols-2 gap-x-12 gap-y-8 h-full">
+        <div className="grid grid-cols-2 gap-x-12 gap-y-6 max-h-[calc(100%-12rem)] overflow-hidden">
           {services.map((service, index) => (
-            <div key={index} className="space-y-4 group">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-gold-accent to-gold-muted rounded-lg flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-5 h-5 text-navy" strokeWidth={2.5} />
+            <div key={index} className="bg-white rounded-lg p-6 border border-gold-accent/10 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-gold-accent rounded-lg flex items-center justify-center">
+                  <service.icon className="w-5 h-5 text-navy" strokeWidth={2} />
                 </div>
-                <h3 className="font-montserrat text-body-lg font-bold text-navy">
+                <h3 className="font-montserrat text-body-lg font-semibold text-navy">
                   {service.category}
                 </h3>
               </div>
               
-              <ul className="space-y-2 pl-2">
+              <ul className="space-y-1.5">
                 {service.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-3 font-montserrat text-body text-black/90 leading-relaxed">
+                  <li key={itemIndex} className="flex items-start gap-2 font-montserrat text-body text-black/90 leading-tight">
                     <div className="w-1 h-1 bg-gold-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span>{item}</span>
+                    <span className="text-sm">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
+        
+        <div className="mt-8 w-32 h-px bg-gold-accent"></div>
       </div>
 
       {/* Footer */}
-      <div className="absolute bottom-8 left-12 right-12 flex items-center justify-between">
-        <span className="font-montserrat text-caption text-navy font-medium elegant-border px-3 py-1">6</span>
+      <div className="absolute bottom-6 left-12 right-12 flex items-center justify-between">
+        <span className="font-montserrat text-caption text-navy font-medium px-2 py-1 border border-gold-accent/30">6</span>
         <img 
-          src="/lovable-uploads/7d289c91-f7e5-4657-96df-fd2ecaf4302a.png" 
+          src="/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png" 
           alt="Logo" 
-          className="w-8 h-8 opacity-70"
-          style={{ filter: 'brightness(0) saturate(100%) invert(84%) sepia(84%) saturate(2978%) hue-rotate(12deg) brightness(101%) contrast(101%)' }}
+          className="w-6 h-6 opacity-60"
         />
       </div>
     </div>
