@@ -2,7 +2,7 @@ import { Shield, Target, Clock } from 'lucide-react';
 
 export const PartnershipPage = () => {
   return (
-    <div className="brochure-page h-full relative">
+    <div className="brochure-page h-full relative bg-white paper-texture">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
@@ -55,15 +55,31 @@ export const PartnershipPage = () => {
           </div>
         </div>
 
-        {/* Partnership Statement */}
-        <div className="bg-white rounded-lg p-8 text-center border border-gold-accent/20">
-          <p className="font-montserrat text-body text-black/90 leading-relaxed">
+        {/* Partnership Statement with Pricing */}
+        <div className="bg-white rounded-lg p-8 text-center border border-gold-accent/20 mb-8">
+          <p className="font-montserrat text-body text-black/90 leading-relaxed mb-6">
             Building lasting partnerships with our clients, providing ongoing legal support 
             that evolves with your business needs in the dynamic UAE market.
           </p>
+          
+          {/* Pricing Information */}
+          <div className="bg-grey-light/30 rounded-lg p-6 mt-6">
+            <h4 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
+              Transparent Fixed-Fee Legal Services
+            </h4>
+            <p className="font-montserrat text-[12px] text-black/80 leading-relaxed mb-4">
+              Our comprehensive legal services are offered at competitive fixed rates, 
+              ensuring cost transparency and budget predictability for your business.
+            </p>
+            <div className="flex items-center justify-center gap-4 text-[12px] text-black/70">
+              <span>• Corporate Formation: Fixed Fee</span>
+              <span>• Legal Consultations: Hourly/Retainer</span>
+              <span>• Contract Review: Per Document</span>
+            </div>
+          </div>
         </div>
 
-        <div className="mt-12 w-32 h-px bg-gold-accent"></div>
+        <div className="mt-8 w-32 h-px bg-gold-accent"></div>
       </div>
 
       {/* Footer */}

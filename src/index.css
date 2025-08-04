@@ -270,4 +270,30 @@
       print-color-adjust: exact !important;
     }
   }
+
+  /* Brochure specific styles */
+  .brochure-page {
+    @apply min-h-screen w-full;
+  }
+
+  /* Paper texture for all pages */
+  .paper-texture {
+    position: relative;
+  }
+  
+  .paper-texture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(0,0,0,0.015) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(0,0,0,0.01) 1px, transparent 1px),
+      linear-gradient(45deg, transparent 49%, rgba(0,0,0,0.005) 49%, rgba(0,0,0,0.005) 51%, transparent 51%);
+    background-size: 40px 40px, 60px 60px, 20px 20px;
+    pointer-events: none;
+    z-index: 1;
+  }
 }
