@@ -49,6 +49,47 @@ export const BrochureViewer = () => {
   return (
     <div className="min-h-screen brochure-viewer-bg flex items-center justify-center p-4 print:p-0 print:min-h-0">
       <div className="relative brochure-container print:shadow-none">
+        {/* Subtle Navigation Controls */}
+        {currentPage > 0 && (
+          <button
+            onClick={prevPage}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 opacity-60 hover:opacity-100"
+            aria-label="Previous page"
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        )}
+        
+        {currentPage < pages.length - 1 && (
+          <button
+            onClick={nextPage}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 opacity-60 hover:opacity-100"
+            aria-label="Next page"
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        )}
+
+        {/* Page Indicator */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex space-x-2">
+          {pages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToPage(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentPage 
+                  ? 'bg-white scale-125' 
+                  : 'bg-white/40 hover:bg-white/60'
+              }`}
+              aria-label={`Go to page ${index + 1}`}
+            />
+          ))}
+        </div>
+
         <div className="w-[297mm] h-[210mm] max-w-[95vw] max-h-[95vh] print:max-w-none print:max-h-none print:w-full print:h-full">
           <div className={`w-full h-full transition-transform duration-500 ease-in-out ${
             isTransitioning ? 'scale-95 opacity-90' : 'scale-100 opacity-100'

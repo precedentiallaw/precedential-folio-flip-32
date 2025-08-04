@@ -6,9 +6,7 @@ export const CoverPage = () => {
       {/* Logo Icon */}
       <div className="mb-12 relative">
         <div className="absolute inset-0 bg-gold-accent/20 blur-3xl rounded-full scale-150"></div>
-        <img src="/lovable-uploads/7d289c91-f7e5-4657-96df-fd2ecaf4302a.png" alt="Precedential Legal Consultancy Logo" className="w-40 h-40 object-contain relative z-10" style={{
-        filter: 'brightness(0) saturate(100%) invert(84%) sepia(84%) saturate(2978%) hue-rotate(12deg) brightness(101%) contrast(101%)'
-      }} />
+        <img src="/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png" alt="Precedential Legal Consultancy Logo" className="w-40 h-40 object-contain relative z-10" />
       </div>
 
       {/* Company Name */}
