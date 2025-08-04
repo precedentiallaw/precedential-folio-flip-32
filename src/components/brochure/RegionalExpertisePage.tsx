@@ -1,17 +1,11 @@
 import { Globe, MapPin, Network } from 'lucide-react';
-
 export const RegionalExpertisePage = () => {
-  return (
-    <div className="brochure-page h-full relative flex">
+  return <div className="brochure-page h-full relative flex">
       {/* Left Side - UAE Map */}
       <div className="w-1/2 bg-gradient-to-br from-background to-grey-light relative flex items-center justify-center overflow-hidden">
         {/* UAE Map Background */}
         <div className="relative flex items-center justify-center">
-          <img 
-            src="/lovable-uploads/8d042ade-3592-46e1-82d3-b81b0c267a38.png" 
-            alt="UAE Map Outline" 
-            className="w-80 h-80 object-contain opacity-80 drop-shadow-lg"
-          />
+          <img src="/lovable-uploads/8d042ade-3592-46e1-82d3-b81b0c267a38.png" alt="UAE Map Outline" className="w-80 h-80 object-contain opacity-80 drop-shadow-lg" />
           
           {/* UAE Flag Pin */}
           <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -20,13 +14,7 @@ export const RegionalExpertisePage = () => {
               <div className="absolute inset-0 w-16 h-16 bg-gold-accent/20 rounded-full animate-pulse"></div>
               
               {/* Main pin */}
-              <div className="relative w-14 h-14 bg-white rounded-full border-3 border-gold-accent flex items-center justify-center premium-shadow">
-                <img 
-                  src="/lovable-uploads/c0ecb555-167e-4563-8d5c-79790ff027bd.png" 
-                  alt="UAE Flag" 
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-              </div>
+              
               
               {/* Pin point */}
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-gold-accent"></div>
@@ -78,12 +66,7 @@ export const RegionalExpertisePage = () => {
       {/* Footer */}
       <div className="absolute bottom-8 left-12 right-12 flex items-center justify-between">
         <span className="font-montserrat text-caption text-navy font-medium px-2 py-1 border border-gold-accent/30">5</span>
-        <img 
-          src="/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png" 
-          alt="Logo" 
-          className="w-6 h-6 opacity-60"
-        />
+        <img src="/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png" alt="Logo" className="w-6 h-6 opacity-60" />
       </div>
-    </div>
-  );
+    </div>;
 };
