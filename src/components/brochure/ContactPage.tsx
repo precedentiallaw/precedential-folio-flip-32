@@ -45,66 +45,7 @@ export const ContactPage = () => {
         
         <div className="flex items-start justify-between max-w-6xl gap-12">
           {/* Contact Information */}
-          <div className="flex-1 space-y-8">
-            {/* Dubai Office Location */}
-            <div className="flex items-start gap-6 group bg-white/50 rounded-lg p-4 border border-gold-accent/20">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Building className="w-6 h-6 text-navy" strokeWidth={2.5} />
-              </div>
-              <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Dubai Office</p>
-                <p className="font-montserrat text-[14px] text-navy font-semibold">Business Bay, Dubai, UAE</p>
-                <p className="font-montserrat text-[12px] text-black/70">Licensed Legal Consultancy</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Globe className="w-6 h-6 text-navy" strokeWidth={2.5} />
-              </div>
-              <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Website</p>
-                <p className="font-montserrat text-[16px] text-navy font-semibold">precedentiallaw.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start gap-6 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Mail className="w-6 h-6 text-navy" strokeWidth={2.5} />
-              </div>
-              <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Email</p>
-                <p className="font-montserrat text-[16px] text-navy font-semibold">ask@precedentiallaw.com</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start gap-6 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Phone className="w-6 h-6 text-navy" strokeWidth={2.5} />
-              </div>
-              <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Phone</p>
-                <p className="font-montserrat text-[16px] text-navy font-semibold">+971 50 901 4120</p>
-              </div>
-            </div>
-
-            {/* UAE Business Hours */}
-            <div className="mt-10 pt-6 border-t border-gold-accent/20">
-              <div className="flex items-start gap-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-gold-accent/20 to-gold-muted/20 rounded-xl flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-gold-accent" strokeWidth={2.5} />
-                </div>
-                <div>
-                  <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Business Hours (GST)</p>
-                  <p className="font-montserrat text-[14px] text-navy font-medium">Sunday - Thursday: 9:00 AM - 6:00 PM</p>
-                  <p className="font-montserrat text-[12px] text-black/70">Most inquiries answered within 24 hours</p>
-                </div>
-              </div>
-            </div>
-
-            {/* UAE Legal Credentials */}
-            
-          </div>
+          
 
           {/* Enhanced QR Code Section */}
           <div className="text-center">
