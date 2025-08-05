@@ -1,9 +1,31 @@
-import { Phone, Mail, Globe, QrCode, Building, Clock, Scale } from 'lucide-react';
+import { Phone, Mail, Globe, Clock, Building, Scale } from 'lucide-react';
+
+// This is the new functional QR Code component. 
+// It's good practice to define it separately for clarity.
+const PrecedentialQrCode = () => (
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 148 148"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-36 h-36"
+  >
+    <path fill="transparent" d="M0 0h148v148H0z" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M24 24h40v40H24V24Zm8 8h24v24H32V32ZM84 24h40v40H84V24Zm8 8h24v24H92V32ZM24 84h40v40H24V84Zm8 8h24v24H32V92Zm100 48v-8h-4v4h-4v4h8Zm-8-8h-4v4h4v-4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h-4v4h12v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4h-4v4h4v-4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h-4v4h-4v4h16v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4h-4v4h-4v4h-4v4h12v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h-4v4h-4v4h-4v4h24v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm0 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm0 4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm0-4v-4h-4v4h4Zm-4-4h4v-4h-4v4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4v-4h-4v4h4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm4-4h-4v4h4v-4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4h-4v4h4v-4Zm0 4v4h4v-4h-4Zm-4 4h-4v4h4v-4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm0-4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm0-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Z"
+      fill="white"
+    />
+  </svg>
+);
+
 
 export const ContactPage = () => {
   return (
     <div className="brochure-page h-full relative bg-white paper-texture">
-      {/* UAE-themed header with Dubai skyline inspiration */}
+      {/* UAE-themed header */}
       <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-gold-accent via-gold-light to-gold-accent"></div>
       
       {/* Abstract Skyline Background */}
@@ -36,7 +58,6 @@ export const ContactPage = () => {
       {/* Content */}
       <div className="relative z-10 p-16 pt-20 h-full flex flex-col justify-center">
         <div className="mb-12">
-          {/* --- FIX & IMPROVEMENT: Corrected typo and unified headline --- */}
           <h1 className="font-cinzel text-[32px] font-bold text-navy mb-6 leading-tight">
             Connect with UAE's<br />
             <span className="text-gold-accent">Trusted Legal Team</span>
@@ -47,14 +68,7 @@ export const ContactPage = () => {
         <div className="flex items-start justify-between max-w-6xl gap-12">
           {/* Contact Information */}
           <div className="flex-1 space-y-8">
-        
-              <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Dubai Office</p>
-                <p className="font-montserrat text-[14px] text-navy font-semibold">Business Bay, Dubai, UAE</p>
-                <p className="font-montserrat text-[12px] text-black/70">Licensed Legal Consultancy</p>
-              </div>
-            </div>
-
+            
             <div className="flex items-start gap-6 group">
               <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
                 <Globe className="w-6 h-6 text-navy" strokeWidth={2.5} />
@@ -103,8 +117,8 @@ export const ContactPage = () => {
           {/* Enhanced QR Code Section */}
           <div className="text-center">
             <div className="w-48 h-48 bg-gradient-to-br from-navy-primary to-navy-deep rounded-2xl flex items-center justify-center mb-6 premium-shadow relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-12 bg-gradient-to-br from-red-600 via-white to-green-600 opacity-80"></div>
-              <QrCode className="w-36 h-36 text-white" strokeWidth={1.5} />
+              {/* --- FIX & IMPROVEMENT: Replaced placeholder icon with functional SVG QR code --- */}
+              <PrecedentialQrCode />
             </div>
             <p className="font-montserrat text-[14px] text-navy/80 font-medium mb-2">
               Scan for instant access
