@@ -16,42 +16,47 @@ export const PartnershipPage = () => {
           <div className="w-16 h-px bg-gold-accent mx-auto mt-4"></div>
         </div>
 
-        {/* Three Value Propositions */}
-        <div className="grid grid-cols-3 gap-8 mb-12">
-          <div className="text-center">
-            <div className="w-12 h-12 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
-              <Shield className="w-6 h-6 text-navy" strokeWidth={2} />
+        {/* SME-Focused Value Propositions */}
+        <div className="bg-navy/5 rounded-xl p-8 mb-8 border border-gold-accent/30">
+          <h2 className="font-cinzel text-[20px] font-bold text-navy text-center mb-6">
+            Specialized Solutions for Small-Medium Enterprises (SME)
+          </h2>
+          <div className="grid grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-14 h-14 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
+                <Shield className="w-7 h-7 text-navy" strokeWidth={2} />
+              </div>
+              <h3 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
+                SME Legal Protection
+              </h3>
+              <p className="font-montserrat text-[12px] text-black/80 leading-relaxed">
+                Comprehensive legal safeguards designed specifically for small and medium enterprises in the UAE market.
+              </p>
             </div>
-            <h3 className="font-montserrat text-body font-semibold text-navy mb-3">
-              Trusted Expertise
-            </h3>
-            <p className="font-montserrat text-caption text-black/80 leading-relaxed">
-              Comprehensive legal guidance backed by deep UAE market knowledge and proven track record.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-12 h-12 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
-              <Target className="w-6 h-6 text-navy" strokeWidth={2} />
+            
+            <div className="text-center">
+              <div className="w-14 h-14 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
+                <Target className="w-7 h-7 text-navy" strokeWidth={2} />
+              </div>
+              <h3 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
+                Growth-Oriented Solutions
+              </h3>
+              <p className="font-montserrat text-[12px] text-black/80 leading-relaxed">
+                Legal frameworks that scale with your business, from startup to established enterprise in Dubai's ecosystem.
+              </p>
             </div>
-            <h3 className="font-montserrat text-body font-semibold text-navy mb-3">
-              Strategic Solutions
-            </h3>
-            <p className="font-montserrat text-caption text-black/80 leading-relaxed">
-              Tailored legal strategies that align with your business objectives and support sustainable growth.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="w-12 h-12 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
-              <Clock className="w-6 h-6 text-navy" strokeWidth={2} />
+            
+            <div className="text-center">
+              <div className="w-14 h-14 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
+                <Clock className="w-7 h-7 text-navy" strokeWidth={2} />
+              </div>
+              <h3 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
+                Cost-Effective Service
+              </h3>
+              <p className="font-montserrat text-[12px] text-black/80 leading-relaxed">
+                Fixed-fee structures that fit SME budgets while delivering enterprise-level legal expertise and support.
+              </p>
             </div>
-            <h3 className="font-montserrat text-body font-semibold text-navy mb-3">
-              Efficient Service
-            </h3>
-            <p className="font-montserrat text-caption text-black/80 leading-relaxed">
-              Streamlined processes and clear communication ensure prompt resolution of legal matters.
-            </p>
           </div>
         </div>
 
@@ -62,20 +67,31 @@ export const PartnershipPage = () => {
             that evolves with your business needs in the dynamic UAE market.
           </p>
           
-          {/* Pricing Information */}
-          <div className="bg-grey-light/30 rounded-lg p-6 mt-6">
-            <h4 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
-              Transparent Fixed-Fee Legal Services
+          {/* Enhanced Pricing Information */}
+          <div className="bg-gold-accent/10 rounded-lg p-6 mt-6 border border-gold-accent/30">
+            <h4 className="font-montserrat text-[16px] font-bold text-navy mb-4 text-center">
+              🏢 Fixed-Fee SME Legal Packages
             </h4>
-            <p className="font-montserrat text-[12px] text-black/80 leading-relaxed mb-4">
-              Our comprehensive legal services are offered at competitive fixed rates, 
-              ensuring cost transparency and budget predictability for your business.
-            </p>
-            <div className="flex items-center justify-center gap-4 text-[12px] text-black/70">
-              <span>• Corporate Formation: Fixed Fee</span>
-              <span>• Legal Consultations: Hourly/Retainer</span>
-              <span>• Contract Review: Per Document</span>
+            <div className="grid grid-cols-3 gap-4 mb-4">
+              <div className="text-center p-3 bg-white rounded border border-gold-accent/20">
+                <h5 className="font-montserrat text-[12px] font-semibold text-navy mb-2">STARTUP PACKAGE</h5>
+                <p className="font-montserrat text-[11px] text-black/80">Business Setup + Basic Compliance</p>
+                <p className="font-montserrat text-[12px] font-bold text-gold-accent mt-2">AED 8,500</p>
+              </div>
+              <div className="text-center p-3 bg-white rounded border border-gold-accent/20">
+                <h5 className="font-montserrat text-[12px] font-semibold text-navy mb-2">GROWTH PACKAGE</h5>
+                <p className="font-montserrat text-[11px] text-black/80">+ Contract Reviews + HR Support</p>
+                <p className="font-montserrat text-[12px] font-bold text-gold-accent mt-2">AED 15,000</p>
+              </div>
+              <div className="text-center p-3 bg-white rounded border border-gold-accent/20">
+                <h5 className="font-montserrat text-[12px] font-semibold text-navy mb-2">ENTERPRISE PACKAGE</h5>
+                <p className="font-montserrat text-[11px] text-black/80">+ Ongoing Legal Retainer</p>
+                <p className="font-montserrat text-[12px] font-bold text-gold-accent mt-2">AED 25,000/yr</p>
+              </div>
             </div>
+            <p className="font-montserrat text-[11px] text-center text-black/70 italic">
+              *All packages include free initial consultation and 30-day post-service support
+            </p>
           </div>
         </div>
 

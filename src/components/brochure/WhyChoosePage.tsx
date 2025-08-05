@@ -1,4 +1,4 @@
-import { Shield, Award, Users, MessageCircle, Clock } from 'lucide-react';
+import { Shield, Award, Users, MessageCircle, Clock, Globe } from 'lucide-react';
 
 export const WhyChoosePage = () => {
   const advantages = [
@@ -26,6 +26,11 @@ export const WhyChoosePage = () => {
       icon: Clock,
       title: "Efficient Resolution",
       description: "Streamlined processes for faster case completion"
+    },
+    {
+      icon: Globe,
+      title: "Dubai Market Focus",
+      description: "Specialized expertise in Dubai's dynamic business environment"
     }
   ];
 
@@ -35,7 +40,7 @@ export const WhyChoosePage = () => {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Content */}
-      <div className="p-12 h-full flex flex-col justify-center">
+      <div className="p-10 h-full flex flex-col justify-center">
         {/* Main Headline */}
         <div className="text-center mb-10">
           <h1 className="font-cinzel text-[24px] font-bold text-navy mb-3 leading-tight">
@@ -44,10 +49,10 @@ export const WhyChoosePage = () => {
           <div className="w-16 h-px bg-gold-accent mx-auto mt-4"></div>
         </div>
 
-        {/* Advantages Grid - Fixed spacing */}
-        <div className="grid grid-cols-2 gap-6 mb-6 max-w-4xl mx-auto">
+        {/* Advantages Grid - Complete 3x2 layout */}
+        <div className="grid grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto">
           {advantages.map((advantage, index) => (
-            <div key={index} className="text-center p-4">
+            <div key={index} className="text-center p-4 bg-white/50 rounded-lg border border-gold-accent/20 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
                 <advantage.icon className="w-6 h-6 text-navy" strokeWidth={2} />
               </div>

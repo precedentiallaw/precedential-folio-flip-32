@@ -5,7 +5,7 @@ import logoSrc from '/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png';
 export const CoverPage = () => {
   return (
     // Main container using a solid, deep navy background color from your Tailwind config.
-    <div className="brochure-page h-full relative bg-navy-deep overflow-hidden">
+    <div className="brochure-page h-full relative bg-navy-primary overflow-hidden">
       
       {/* Optional: A very subtle texture to add depth without being distracting. */}
       {/* This uses the 'paper-texture' class defined in your index.css */}
