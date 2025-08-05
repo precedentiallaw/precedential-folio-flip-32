@@ -47,11 +47,7 @@ export const ContactPage = () => {
         <div className="flex items-start justify-between max-w-6xl gap-12">
           {/* Contact Information */}
           <div className="flex-1 space-y-8">
-            {/* Dubai Office Location */}
-            <div className="flex items-start gap-6 group bg-white/50 rounded-lg p-4 border border-gold-accent/20">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Building className="w-6 h-6 text-navy" strokeWidth={2.5} />
-              </div>
+        
               <div>
                 <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Dubai Office</p>
                 <p className="font-montserrat text-[14px] text-navy font-semibold">Business Bay, Dubai, UAE</p>
