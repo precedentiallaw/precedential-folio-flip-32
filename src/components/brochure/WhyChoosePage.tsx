@@ -29,44 +29,60 @@ export const WhyChoosePage = () => {
     },
     {
       icon: Globe,
-      title: "Dubai Market Focus",
-      description: "Specialized expertise in Dubai's dynamic business environment"
+      title: "UAE Market Expertise",
+      description: "Comprehensive knowledge of UAE's evolving business landscape"
     }
   ];
 
   return (
-    <div className="brochure-page h-full relative bg-white paper-texture">
-      {/* Header Line */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
+    <div className="brochure-page h-full relative bg-white paper-texture print:bg-white">
+      {/* Professional header with legal accent */}
+      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
-      {/* Content */}
-      <div className="p-10 h-full flex flex-col justify-center">
+      {/* Legal symbols background */}
+      <div className="absolute inset-0 opacity-3">
+        <svg width="100%" height="100%" viewBox="0 0 800 600" className="fill-navy/5">
+          <path d="M100 300 L120 260 L140 300 L120 340 Z" />
+          <path d="M700 150 L720 110 L740 150 L720 190 Z" />
+          <circle cx="650" cy="450" r="25" />
+        </svg>
+      </div>
+      
+      {/* Content optimized for print */}
+      <div className="p-8 h-full flex flex-col justify-center print:p-6">
         {/* Main Headline */}
-        <div className="text-center mb-10">
-          <h1 className="font-cinzel text-[24px] font-bold text-navy mb-3 leading-tight">
+        <div className="text-center mb-8">
+          <h1 className="font-cinzel text-[20px] font-bold text-navy mb-2 leading-tight print:text-[18px]">
             Why Choose Precedential
           </h1>
-          <div className="w-16 h-px bg-gold-accent mx-auto mt-4"></div>
+          <div className="w-12 h-px bg-gold-accent mx-auto mt-3"></div>
         </div>
 
-        {/* Advantages Grid - Complete 3x2 layout */}
-        <div className="grid grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto">
+        {/* Professional quote */}
+        <div className="text-center mb-8 p-4 border-l-4 border-gold-accent bg-navy/5 rounded-r-lg">
+          <p className="font-montserrat text-[11px] text-navy italic">
+            "Excellence in legal counsel through comprehensive expertise and unwavering commitment to client success"
+          </p>
+        </div>
+
+        {/* Advantages Grid - Print optimized */}
+        <div className="grid grid-cols-3 gap-4 mb-6 max-w-5xl mx-auto">
           {advantages.map((advantage, index) => (
-            <div key={index} className="text-center p-4 bg-white/50 rounded-lg border border-gold-accent/20 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-gold-accent rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <advantage.icon className="w-6 h-6 text-navy" strokeWidth={2} />
+            <div key={index} className="text-center p-3 bg-white rounded border border-gold-accent/20 print:p-2">
+              <div className="w-10 h-10 bg-gold-accent rounded mx-auto mb-3 flex items-center justify-center print:w-8 print:h-8">
+                <advantage.icon className="w-5 h-5 text-navy print:w-4 print:h-4" strokeWidth={2} />
               </div>
-              <h3 className="font-montserrat text-[14px] font-semibold text-navy mb-3">
+              <h3 className="font-montserrat text-[12px] font-semibold text-navy mb-2 print:text-[11px]">
                 {advantage.title}
               </h3>
-              <p className="font-montserrat text-[12px] text-black/80 leading-relaxed">
+              <p className="font-montserrat text-[10px] text-black/80 leading-relaxed print:text-[9px]">
                 {advantage.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-6 w-32 h-px bg-gold-accent mx-auto"></div>
+        <div className="mt-4 w-24 h-px bg-gold-accent mx-auto"></div>
       </div>
 
       {/* Footer */}

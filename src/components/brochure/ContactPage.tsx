@@ -36,10 +36,10 @@ export const ContactPage = () => {
       {/* Content */}
       <div className="relative z-10 p-16 pt-20 h-full flex flex-col justify-center">
         <div className="mb-12">
-          <h1 className="font-cinzel text-[32px] font-bold text-navy mb-4 leading-tight">
-            Connect with Dubai's
+          <h1 className="font-cinzel text-[28px] font-bold text-navy mb-4 leading-tight print:text-[24px]">
+            Connect with UAE's
           </h1>
-          <h2 className="font-cinzel text-[28px] font-bold text-gold-accent mb-6 leading-tight">
+          <h2 className="font-cinzel text-[24px] font-bold text-gold-accent mb-6 leading-tight print:text-[20px]">
             Premier Legal Team
           </h2>
           <div className="w-40 h-px bg-gradient-to-r from-gold-accent to-transparent"></div>
@@ -48,15 +48,15 @@ export const ContactPage = () => {
         <div className="flex items-start justify-between max-w-6xl gap-12">
           {/* Contact Information */}
           <div className="flex-1 space-y-8">
-            {/* Dubai Office Location */}
-            <div className="flex items-start gap-6 group bg-white/50 rounded-lg p-4 border border-gold-accent/20">
-              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300">
-                <Building className="w-6 h-6 text-navy" strokeWidth={2.5} />
+            {/* UAE Office Location */}
+            <div className="flex items-start gap-6 group bg-white/50 rounded-lg p-4 border border-gold-accent/20 print:p-3">
+              <div className="w-12 h-12 bg-gradient-to-br from-gold-accent to-gold-muted rounded-xl flex items-center justify-center premium-shadow group-hover:scale-110 transition-transform duration-300 print:w-10 print:h-10">
+                <Building className="w-6 h-6 text-navy print:w-5 print:h-5" strokeWidth={2.5} />
               </div>
               <div>
-                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2">Dubai Office</p>
-                <p className="font-montserrat text-[14px] text-navy font-semibold">Business Bay, Dubai, UAE</p>
-                <p className="font-montserrat text-[12px] text-black/70">Licensed Legal Consultancy</p>
+                <p className="font-montserrat text-[11px] text-navy/70 uppercase tracking-wider mb-2 print:text-[10px]">UAE Office</p>
+                <p className="font-montserrat text-[14px] text-navy font-semibold print:text-[12px]">Business Bay, UAE</p>
+                <p className="font-montserrat text-[12px] text-black/70 print:text-[11px]">Licensed Legal Consultancy</p>
               </div>
             </div>
 
@@ -126,10 +126,10 @@ export const ContactPage = () => {
               Mobile-optimized consultation booking
             </p>
             
-            {/* Dubai Legal District mention */}
+            {/* UAE Legal Services mention */}
             <div className="mt-4 text-center">
               <p className="font-montserrat text-[10px] text-gold-accent font-semibold">
-                Serving Dubai's Legal District
+                Serving UAE's Business Community
               </p>
             </div>
           </div>

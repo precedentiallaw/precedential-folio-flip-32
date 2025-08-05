@@ -9,7 +9,7 @@ export const RegionalExpertisePage = () => {
     },
     {
       icon: Globe,
-      title: "Dubai Free Zones",
+      title: "UAE Free Zones",
       description: "Specialized expertise in DIFC, ADGM, and other UAE free zone regulations"
     },
     {
@@ -75,10 +75,10 @@ export const RegionalExpertisePage = () => {
             ))}
           </div>
 
-          {/* Dubai Business Focus */}
+          {/* UAE Business Focus */}
           <div className="mt-8 p-4 bg-navy/5 rounded-lg border-l-4 border-gold-accent">
             <p className="font-montserrat text-[12px] text-navy font-medium">
-              "Precedential Legal Consultancy is licensed and based in Dubai, UAE, 
+              "Precedential Legal Consultancy is licensed and based in the UAE, 
               providing authentic local expertise with global standards."
             </p>
           </div>
